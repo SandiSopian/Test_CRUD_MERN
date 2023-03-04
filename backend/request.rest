@@ -1,0 +1,25 @@
+GET http://127.0.0.1:5000/users
+
+###
+POST http://127.0.0.1:5000/users
+Content-Type: application/json
+
+{
+    "name": "Herman",
+    "email": "herman@gmail.com",
+    "gender": "Male"
+}
+
+###
+PATCH  http://127.0.0.1:5000/users/6402f9c674d154a555143ac0
+Content-Type: application/json
+
+{
+    "name": "Donny",
+    "email": "donny@gmail.com",
+    "gender": "Male"
+}
+
+###
+DELETE  http://127.0.0.1:5000/users/6402f9c674d154a555143ac0
+Content-Type: application/json
